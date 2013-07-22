@@ -1,0 +1,108 @@
+html, body{
+	position: relative;
+	height: 100%;
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+#mainFixMistake {
+	position: relative;
+	height: 100%;
+	background-image:url('/static/img/cream_dust.png');
+}
+
+#ballotTable {
+	padding: 3em;
+}
+
+#helpFixMistake {
+	position: relative;
+	text-align: center;
+	height: 100%;
+	background-image:url('/static/img/wavegrid.png');
+}
+
+#fixButtons {
+	position: absolute;
+	height: 10%;
+	bottom: 0;
+}
+
+#currentBallotTab, #previousBallotTab {
+	padding: 10px;
+}
+
+.raceName {
+	font-size: 1.2em;
+
+}
+
+.fixMistakeBtn {
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	font-size: 1.2em;
+	border-radius: 3px;
+	border-color: black;
+}
+
+.reset {
+	margin-top: 6px;
+	font-size: 1.6em;
+	border-color: transparent;
+}
+
+.tableTab {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	font-style: italic;
+}
+
+.ballotHeader {
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 1em;
+	font-weight: bold;
+}
+
+.noSelection {
+	font-size: 1.6em;
+	font-style: italic;
+	line-height: 1.6em;
+}
+
+td {
+	width: 45%;
+}
+
+.helpText {
+	color: gray;
+	padding: 20px;
+	bottom: 40%;
+	font-size: 1.8em;
+	line-height: 1em;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	color: #5F0000;
+	text-align: center;
+}
+
+.info {
+	text-align: center;
+}
+
+.fixBtn {
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	font-size: 1.4em;
+	height: 2em;
+}
+
+.modal-text{
+	font-weight: normal;
+}
+
+.tutorialLink{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}

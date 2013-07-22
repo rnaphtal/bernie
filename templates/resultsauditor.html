@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TrueVote - Results</title>
+		<link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/results.css" rel="stylesheet" media="screen">
+		
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/results.js"></script>
+	</head>
+	
+	<body>
+		<div class="container">
+			<div class="resultsContainer">
+			<div class="well">
+				<ul class="nav pull-right">
+					<li class="active">
+						<a href="/">Log Out</a>
+					</li>
+				</ul>
+				<div class="row-fluid">
+					<div class="span3">
+						<img src="{{ STATIC_URL }}img\logo.png" width="500" height="120">
+					</div>
+					<div class="span9">
+						<h1><div id="resultsTitle"> 2012 Projected Election Results </div></h1>
+					</div>
+				</div>
+			</div>
+
+			<div id="tabbablePills">
+				<ul class="nav nav-pills">
+					<li class="active"><a href="#oResults" data-toggle="tab">Overall Results</a></li>
+					<li><a href="#aResults" data-toggle="tab">Current Audit Results</a></li>
+				</ul>
+			</div>
+
+			<div class="tab-content">
+				<div class="tab-pane active" id="oResults">
+					<div class="tabbable tabs-left"> 
+						<ul class="nav nav-tabs" id="oNavTable">
+						</ul>
+						<!-- There needs to be some filler first tab content; this is overwritten by results.js -->
+						<div class="tab-content" id="oTabTable">
+							<div class="tab-pane active" id="oTab">
+								<h3> President and Vice President</h3>
+								<div class="center chart" id="o_chart_div0"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tab-pane" id="aResults">
+					<div class="tabbable tabs-left"> 
+						<ul class="nav nav-tabs" id="auditNavTable">
+						</ul>
+						<!-- There needs to be some filler first tab content; this is overwritten by results.js -->
+						<div class="tab-content" id="auditTabTable">
+							<div class="tab-pane active" id="aTab">
+								<h3> President and Vice President</h3>
+								<div class="center chart" id="a_chart_div0"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

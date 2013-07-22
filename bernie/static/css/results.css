@@ -1,0 +1,144 @@
+html, body{
+	position: relative;
+	height: 100%;
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+}
+
+#mainFixMistake {
+	position: relative;
+	height: 100%;
+	background-image:url('/static/img/cream_dust.png');
+}
+
+#ballotTable {
+	padding: 3em;
+	padding-bottom: 0;
+	padding-top: 3em;
+}
+
+#helpFixMistake {
+	position: relative;
+	text-align: center;
+	height: 100%;
+	background-image:url('/static/img/wavegrid.png');
+	overflow-x: hidden;
+}
+
+#currentBallotTab, #previousBallotTab {
+	padding: 10px;
+}
+
+.tableTab {
+	font-size: 1.6em;
+	line-height: 1.6em;
+	font-style: italic;
+}
+
+td {
+	width: 45%;
+}
+
+h1 {
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	color: #5F0000;
+	text-align: center;
+}
+
+h3 {
+	font-size: 45px;
+	color: black;
+}
+
+.info {
+	text-align: center;
+}
+
+#RaceButtons{
+	margin-top: 50px;
+	overflow: auto;
+}
+
+.raceTitle{
+	font-style: normal;
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: black;
+	line-height: 120%;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background-color: #ccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-pills:hover{
+	cursor: pointer;
+}
+
+#rightScreen {
+	position: relative;
+	text-align: center;
+	height: 100%;
+	overflow: auto;
+}
+
+#currentBallotTab{
+	position: relative;
+	text-align: center;
+	height: 100%;
+}
+
+#RaceButtons{
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.pillBtn{
+	text-align: left;
+	white-space: nowrap;
+
+}
+
+.pWinner {
+	font-size: 1.95em;
+	color: gray;
+	line-height: 0.7em;
+}
+
+.wName{
+	font-size: 3.1em;
+	color: black;
+	line-height: 1.1em;
+}
+
+.pWCaption{
+	font-size: 1.2em;
+	font-style: italic;
+	color: gray;
+	line-height: 4em;
+}
+
+#currentBallotTabGraph{
+	margin-top: 30px;
+	margin-bottom: 5px;
+	position: static;
+}
+
+#previousBallotTabGraph{
+	margin-top: 30px;
+	margin-bottom: 5px;
+	position: static;
+}
+
+#fixButtons {
+	position: absolute;
+	height: 10%;
+	bottom: 0;
+}
+
+.fixBtn {
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif;
+	font-size: 1.4em;
+	height: 2em;
+}

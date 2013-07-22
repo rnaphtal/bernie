@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TrueVote - Audit</title>
+		<link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/bootstrap-themed.css" rel="stylesheet" media="screen">
+		<!--<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" media="screen">-->
+		<link href="{{ STATIC_URL }}css/index.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/jquery-ui-1.10.2.custom.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/bootstro.css" rel="stylesheet" media="screen">
+		<link href="{{ STATIC_URL }}css/introjs.css" rel="stylesheet" media="screen">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700,300' rel='stylesheet' type='text/css'>
+
+		
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/intro.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/bootstro.js "></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/bootbox.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/jquery-ui-1.10.2.custom.js"></script>
+
+		<script type="text/javascript" src="{{ STATIC_URL }}js/tutorial_audit.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/tutorial_vote-count.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js/tutorial_sidebar.js"></script>
+		
+		
+	</head>
+	
+	<body>
+	
+	<!--Start modal-->
+	<div id="startTutorial" class="modal hide fade" data-backdrop="static">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h1 class="modal-text">Welcome to TrueVote!</h1>
+		</div>
+		<div class="modal-body">
+			<h4 class="modal-text">Get started through a short tutorial.</h4>
+		</div>
+		<div class="modal-footer">
+			<a id="tutorialCancel" class="btn btn-danger" href="/audit">Skip Tutorial</a>
+			<a id="tutorialSubmit" class="btn btn-info login-button">Next</a>
+		</div>
+	</div> 
+	
+	<div id="startAuditModal" class="modal hide fade" data-backdrop="static">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			<h1 class="modal-text">Begin Audit</h1>
+		</div>
+		<div class="modal-body">
+			<h4 class="modal-text">You are now going to begin the actual audit.</h4>
+		</div>
+		<div class="modal-footer">
+			<a id="startAuditButton" class="btn btn-info login-button">Continue</a>
+		</div>
+	</div>
+
+	  <div id="mainScreen" class="row-fluid" >
+	  	
+		<div id="sidebarDiv" class="span3">
+			<!--Sidebar content-->
+			{% include "tutorial_sidebar.html" %}
+		</div>
+
+		<div id="voteCountDiv" class="span9 bootstro initialTutorial" data-bootstro-step="0" data-bootstro-placement="left" data-bootstro-content="This screen will show each race. Click on the candidate name to record a vote." data-bootstro-width : "300px">
+			<div id="voteCountDiv" class="span12">
+			<!--Body content-->
+			{% include "tutorial_vote_count.html" %}
+			</div>
+		</div> 
+	  </div>
+	</div>
+	</body>
+</html>
